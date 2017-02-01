@@ -22,10 +22,9 @@ main () {
   done
 
   shift $(expr $OPTIND - 1)
-  [ $# -ne 2 ] && usage && exit 1
+  [ $# -ne 1 ] && usage && exit 1
 
   slug="$1"
-  author="$2"
   file_name="post/$(date +"%Y-%m-%d")-${slug}.md"
   file_path="content/$file_name"
   if [ ! -e "$file_path" ]; then
