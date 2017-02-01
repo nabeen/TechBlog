@@ -9,7 +9,7 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [permalinks]
-    post = "/:year/:month/:day/:slug"
+    post = "/:slug"
 
 [Author]
     name = "nabeen"
