@@ -9,7 +9,7 @@ description = ""
 
 +++
 
-[GithubPagesにHugoで作ったサイトをホスティングする](https://nabeen.github.io/post/github-hugo-wercker/)でも書いたが、ひとまずこのブログでは公式テーマである[Mainroad](http://themes.gohugo.io/mainroad/)を使うことにした。ただ、このテーマに全て満足しているわけもなく、いくつかカスタマイズしたいなぁという部分があったので、今回はカスタム方法についてサクッと書いておく。
+[GithubPagesにHugoで作ったサイトをホスティングする](https://nabeen.github.io/2017/02/01/github-hugo-wercker/)でも書いたが、ひとまずこのブログでは公式テーマである[Mainroad](http://themes.gohugo.io/mainroad/)を使うことにした。ただ、このテーマに全て満足しているわけもなく、いくつかカスタマイズしたいなぁという部分があったので、今回はカスタム方法についてサクッと書いておく。
 
 ## Hugoのテーマをカスタムするには？
 これはCSSだけに限った話ではないが、Hugoはthemeファイルを読みにいったあと、プロジェクト内で独自定義されている同名のファイルがあればオーバーライドして適用される。つまりどういうことかというと、テーマファイル内に`/themes/mainroad/static/css/style.css`があって、プロジェクト内に`static/css/style.css`があればオーバーライドして適用してくれるわけ。ということは、テーマ自体を触らずに独自定義部分のみ外出しできる仕組みになってるってことだ。
