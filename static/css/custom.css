@@ -125,3 +125,30 @@ body {
 	background-color: #eee;
 	text-align: center;
 }
+
+@media screen and (min-width: 1125px) {
+	.mr-header-text {
+		float: left;
+		position : absolute;
+		bottom : 10px;
+	}
+	.mr-header-title {
+		font-size: 1.8rem
+	}
+	.mr-header-tagline {
+		font-size: 0.775rem
+	}
+	.mr-header-text-right {
+		padding: 10px;
+		text-align: center;
+		background-color: #eee;
+		float: right;
+		width: 728px;
+	}
+}
+
+@media screen and (max-width: 1124px) {
+	.mr-header-text-right {
+		display: none;
+	}
+}
