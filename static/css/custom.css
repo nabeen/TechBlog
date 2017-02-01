@@ -9,6 +9,10 @@ body {
 	-webkit-box-shadow: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* フッターの横幅調整 */
 .mr-copyright-wrap {
 	margin-left: -500%;
