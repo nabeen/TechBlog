@@ -115,3 +115,13 @@ body {
 .separator {
 	height: 20px
 }
+
+.ad_ninja span{
+	padding: 5px
+}
+
+.ad_ninja {
+	padding: 10px;
+	background-color: #eee;
+	text-align: center;
+}
