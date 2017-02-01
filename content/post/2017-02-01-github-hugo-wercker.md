@@ -1,11 +1,11 @@
 +++
-categories = []
-date = "2017-02-01T14:43:52+09:00"
-description = ""
-tags = []
-thumbnail = ""
 title = "GithubPagesにHugoで作ったサイトをホスティングする"
-slug = "githubpages_hugo"
+slug = "github-hugo-wercker"
+thumbnail = ""
+tags = ["Hugo", "Github", "GithubPages", "wercker"]
+categories = ["Blog"]
+date = "2017-02-01T22:27:51+09:00"
+description = ""
 
 +++
 
