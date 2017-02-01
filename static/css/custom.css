@@ -1,3 +1,15 @@
+/* 背景色 */
+body {
+	background: #FFF;
+}
+
+/* 影の取り消し */
+.mr-container-outer {
+	margin: auto;
+	-webkit-box-shadow: none;
+}
+
+/* フッターの横幅調整 */
 .mr-copyright-wrap {
 	margin-left: -500%;
 	margin-right: -500%;
@@ -5,6 +17,7 @@
 	padding-right: 500%;
 }
 
+/* ナビゲーションの横幅調整 */
 .menu {
 	margin-left: -500%;
 	margin-right: -500%;
@@ -12,15 +25,7 @@
 	padding-right: 500%;
 }
 
-.mr-container-outer {
-	margin: auto;
-	-webkit-box-shadow: none;
-}
-
-body {
-	background: #FFF;
-}
-
+/* リストスタイル */
 .entry-content ul li {
 	padding:0px;
 	margin:0px;
@@ -84,4 +89,25 @@ body {
   height: 22px;
   width: 22px;
   border-radius: 50%;
+}
+
+/* authorboxスタイル */
+.mr-author-box-avatar, .mr-author-box-avatar img {
+	border-radius: 50%
+}
+
+/* タグクラウドスタイル */
+.tagcloud a {
+	border-radius: 10px
+}
+
+/* codeスタイル */
+.entry-content p code {
+	padding: 0.2em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin: 0.2em;
+	font-size: 85%;
+	background-color: rgba(0,0,0,0.04);
+	border-radius: 3px;
 }

@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "mainroad"
+title = "⌘Cmd+C, ⌘Cmd+V"
 languageCode = "ja"
 countryCode="ja"
 HasCJKLanguage=true
@@ -11,12 +11,12 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Author]
     name = "nabeen"
-    bio = "nabeen's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+    bio = "修羅の国でせっせと働く社畜系WEBエンジニアです。勉強会で会ったら指差して笑ってください・ω・ Software Engineer, #PHP, #Ruby, #RoR, #Swift, #Unity"
     avatar = "https://github.com/nabeen.png"
 
 
 [Params]
-    subtitle = "Just another site" # Subtitle of your site
+    subtitle = "今日も僕は修羅の国で元気に消耗しています:)" # Subtitle of your site
     description = "nabeen's Personal blog about everything" # Description of your site
     opengraph = true
     leftsidebar = false # Move sidebar to the left side if true
