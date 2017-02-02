@@ -29,8 +29,8 @@ main () {
   file_path="content/$file_name"
   if [ ! -e "$file_path" ]; then
     hugo new "$file_name"
-    sed -i '' -e 's/title = \".*\"/title = \"\"/g' "$file_path"
-    sed -i '' -e "s/slug = \".*\"/slug = \"$slug\"/g" "$file_path"
+    # sed -i -e 's/title = \".*\"/title = \"\"/g' "$file_path"
+    sed -i -e "s/slug = \".*\"/slug = \"$slug\"/g" "$file_path"
   else
     echo "$file_name already exists."
   fi
