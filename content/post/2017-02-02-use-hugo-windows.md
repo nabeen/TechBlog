@@ -3,10 +3,10 @@ title = "WindowsでのHugoの導入方法"
 slug = "use-hugo-windows"
 tags = ["Hugo", "windows"]
 categories = ["Hugo"]
-date = "2017-02-02T10:19:22+09:00"
+date = "2017-02-02T15:18:44+09:00"
 description = ""
 thumbnail = ""
-draft = true
+draft = false
 author = "nabeen"
 +++
 
