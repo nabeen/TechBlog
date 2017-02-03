@@ -149,10 +149,18 @@ body {
 		float: right;
 		width: 728px;
 	}
+	.widget_ad_side {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1124px) {
 	.mr-header-text-right {
 		display: none;
 	}
+}
+
+.entry-content tr th {
+	background-color: #e64946;
+	color: #ffffff;
 }

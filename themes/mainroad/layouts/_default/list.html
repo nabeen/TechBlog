@@ -6,6 +6,20 @@
 			<h1 class="page-title">{{ .Title }}</h1>
 		</header>
 		{{ end }}
+
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- githubpages_linkad -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-4802597269756689"
+		     data-ad-slot="2995462456"
+		     data-ad-format="link"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+
+		<div class="separator"></div>
+
 		{{ $paginator := .Paginate ( where .Data.Pages "Section" "post") }}
 		{{ range $paginator.Pages }}
 		<article class="mr-loop-item post type-post hentry clearfix">
