@@ -45,7 +45,7 @@ menu = "main"
 最近Githubに草を生やすのが趣味なので、僕の草を貼っておきます。隣の芝は青いぜ。
 
 <a href="http://github.com/nabeen" class="gh-contributions" data-gh-username="nabeen" target="\_blank">nabeen's contributions</a>
-<script src="http://ikuwow.github.io/yourcontributions/widget.min.js"></script>
+<script src="https://ikuwow.github.io/yourcontributions/widget.min.js"></script>
 
 ## About Blog
 本ブログでは、以下の情報を取り扱います。
