@@ -13,14 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-/* フッターの横幅調整 */
-.mr-copyright-wrap {
-	margin-left: -500%;
-	margin-right: -500%;
-	padding-left: 500%;
-	padding-right: 500%;
-}
-
 /* ナビゲーションの横幅調整 */
 .menu {
 	margin-left: -500%;
@@ -151,6 +143,13 @@ body {
 	}
 	.widget_ad_side {
 		display: none;
+	}
+	/* フッターの横幅調整 */
+	.mr-copyright-wrap {
+		margin-left: -500%;
+		margin-right: -500%;
+		padding-left: 500%;
+		padding-right: 500%;
 	}
 }
 
