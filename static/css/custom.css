@@ -164,3 +164,8 @@ body {
 	background-color: #e64946;
 	color: #ffffff;
 }
+
+.main-content pre {
+    background-color: #272822;
+    color: #f8f8f2;
+}
