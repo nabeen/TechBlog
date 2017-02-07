@@ -1,5 +1,5 @@
 +++
-tags = ["line","bot"]
+tags = ["line", "bot", "Message API"]
 categories = ["line"]
 date = "2017-02-07T21:06:56+09:00"
 title = "LINE botの使い方レクチャーが社内であったので参加した"
