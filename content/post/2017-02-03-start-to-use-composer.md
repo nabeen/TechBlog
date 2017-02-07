@@ -20,8 +20,10 @@ author = "nabeen"
 
 1. composer導入済みであること
 
+たったこれだけ！
+
 ## composer.jsonの雛形を作成する
-雛形は対話式で作ることができます。基本、Enter押すだけでも作れる感じですね。楽ちん楽ちん。※個人情報な部分は一部伏せ字にしています。
+雛形は対話式で作ることができます。基本、Enter押すだけでも作れる感じですね。楽ちん楽ちん。※個人情報な部分は一部伏せ字にしています。nameを`algorithm`にしてるのは、最近社内で数学パズル的なことをやってるから、それを楽ちんに書ける雛形がちょうど欲しかったからです。
 
 ```bash
 composer init
@@ -83,17 +85,7 @@ $ cat composer.json
 }
 ```
 
-ここで`composer install`すればvendorディレクトリが作られます。
-
-```bash
-$ composer install
-Loading composer repositories with package information
-Updating dependencies (including require-dev)
-Nothing to install or update
-Generating autoload files
-```
-
-試しによく使うMonologでも入れてみましょう。
+これだけじゃなんか味気ないので、試しによく使うMonologでも入れてみましょう(つ、使いますよね、、？)
 
 ```json
 "require": {
@@ -101,4 +93,88 @@ Generating autoload files
 }
 ```
 
-これでもっかい`composer install`すると、Monologを入れてくれます。
+これで`composer install`すると、`vendor`配下にMonologを入れてくれます。
+
+## テスト用のコマンドを作成する
+とりあえずなんか作って叩きたいので、`composer.json`に一手間加えて、
+
+```json
+{
+    "name": "nabeen/algorithm",
+    "description": "any algorithm",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nabeen",
+            "email": "watanabe_kenichiro@hasigo.co.jp"
+        }
+    ],
+    "require": {
+    	"monolog/monolog": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "nabeen\\algorithm\\": "src"
+        }
+    },
+    "bin": ["test-command"]
+}
+```
+
+叩く元のファイルを作って、
+
+```php
+#! /usr/bin/env php
+
+<?php
+$files = array(
+    '/vendor/autoload.php',
+    '/../../vendor/autoload.php',
+);
+
+// autoloadの読み込み
+foreach ($files as $file) {
+    if (file_exists(__DIR__.$file)) {
+        require __DIR__.$file;
+        break;
+    }
+}
+
+// 処理実行
+$app = new \nabeen\algorithm\TestCommand();
+$app->run($argv);
+
+```
+
+叩くclassを作ってあげます。
+
+```php
+<?php
+namespace nabeen\algorithm;
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+class TestCommand
+{
+    public function __construct()
+    {
+        $this->log = new Logger('app');
+        $this->log->pushHandler(new StreamHandler(__DIR__.'../../logs/app.log', Logger::DEBUG));
+    }
+
+    public function run ($argv)
+    {
+        $this->log->addInfo('Info Message');
+        $this->log->addError('Error Message');
+        $this->log->addDebug('Debug Message');
+        echo "excuted TestCommand. And logging by monolog/monolog";
+    }
+}
+```
+
+Monolog使ってlogファイルを吐き出す、ただそれだけの処理です。とりあえずこの中でしか使わない予定なので、プロジェクト直下の`logs`ディレクトリに吐いています。
+
+## 最終型のフォルダ構造
+こんな感じにもにょもにょしてあげた結果は、こんな感じになります。
