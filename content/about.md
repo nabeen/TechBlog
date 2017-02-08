@@ -47,6 +47,11 @@ menu = "main"
 <a href="http://github.com/nabeen" class="gh-contributions" data-gh-username="nabeen" target="\_blank">nabeen's contributions</a>
 <script src="https://ikuwow.github.io/yourcontributions/widget.min.js"></script>
 
+## Activity of Coding
+wakatimeでトラッキングしています。可視化便利。
+
+<figure><embed src="https://wakatime.com/share/@nabeen/e61ec1f9-732b-4ac4-95fb-09f0140de9ff.svg"></embed></figure>
+
 ## About Blog
 本ブログでは、以下の情報を取り扱います。
 
