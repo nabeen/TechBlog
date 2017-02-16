@@ -1,12 +1,12 @@
 +++
 tags = ["Selenium", "Python", "FiremobileSimulator"]
 title = "SeleniumでFirefoxのFiremobileSimulatorを利用する"
-draft = true
+draft = false
 description = ""
 thumbnail = ""
 slug = "selenium-firemobile-simulator"
 categories = ["Selenium", "Python"]
-date = "2017-02-17T01:45:54+09:00"
+date = "2017-02-17T02:03:34+09:00"
 author = "nabeen"
 
 +++
