@@ -1,12 +1,12 @@
 +++
 description = ""
-draft = true
+draft = false
 slug = "line-fukuoka-study"
 title = "LINE Developer Meetup in Fukuoka #17 に参加してきた！ #LINE_DM"
 thumbnail = ""
 tags = ["Event", "LINE", "MachineLearning"]
 categories = ["Event"]
-date = "2017-02-23T19:36:16+09:00"
+date = "2017-02-25T13:55:20+09:00"
 author = "nabeen"
 
 +++
@@ -28,9 +28,9 @@ Pythonは書きやすいし見やすいしとっても好きなんです（書�
 ## ご家庭でできる！データ分析を支えるクローリング環境の構築
 データ分析する？じゃあデータが必要だよねってことで、機械学習やる前の、データを集める部分のお話でした。簡潔に言えば、PythonのScrapy使えばこんな簡単にスクレイピングできるんだぜ！っていう。
 
-スクレイピングの本が欲しくなる内容でした。
+スクレイピングの本が欲しくなる内容でした。こういう本があるんですよねー誰か買ってくれないかな-(/ω・＼)ﾁﾗｯ |дﾟ)ﾁﾗｯ
 
-
+<div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="http://www.amazon.co.jp/exec/obidos/asin/4774183679/kenixi04-22/" target="_blank" ><img src="https://images-fe.ssl-images-amazon.com/images/I/51IiWeYB-7L._SL160_.jpg" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="http://www.amazon.co.jp/exec/obidos/asin/4774183679/kenixi04-22/" target="_blank" >Pythonクローリング&スクレイピング -データ収集・解析のための実践開発ガイド-</a><div class="booklink-powered-date">posted with <a href="http://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">加藤 耕太 技術評論社 2016-12-16    </div><div class="booklink-link2"><div class="shoplinkamazon"><a href="http://www.amazon.co.jp/exec/obidos/asin/4774183679/kenixi04-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01NGWKE0P/kenixi04-22/" target="_blank" >Kindle</a></div><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/12fd8545.b2d9280e.12fd8546.f36f5475/?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14559253%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkrakukobo"><a href="http://hb.afl.rakuten.co.jp/hgc/12fd8545.b2d9280e.12fd8546.f36f5475/?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F017982691c4a3b83a417f0be07bcaf8d%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天kobo</a></div>                  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 
 ### データの提供方法
 * ファイルによる提供（静的/動的）
