@@ -3,11 +3,11 @@ tags = ["bot", "oracle", "event"]
 slug = "oracle-bot"
 categories = ["bot"]
 thumbnail = ""
-date = "2017-03-15T19:00:13+09:00"
+date = "2017-03-15T20:41:34+09:00"
 description = ""
 title = "オラクルで開催されたBotの勉強会に参加してきた！"
 author = "nabeen"
-draft = true
+draft = false
 
 +++
 
