@@ -26,7 +26,7 @@ main () {
   [ $# -ne 1 ] && usage && exit 1
 
   slug="$1"
-  file_name="post/$(date +"%Y-%m-%d")-${slug}.md"
+  file_name="post/$(date +"%Y")/$(date +"%m")/$(date +"%Y-%m-%d")-${slug}.md"
   file_path="content/$file_name"
   if [ ! -e "$file_path" ]; then
     hugo new "$file_name"
