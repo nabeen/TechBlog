@@ -2,7 +2,7 @@
 title = ""
 slug = ""
 description = ""
-date = ""
+date = "{{ .Date }}"
 categories = []
 tags = []
 thumbnail = ""
