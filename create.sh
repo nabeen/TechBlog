@@ -36,8 +36,10 @@ main () {
     else
      sed -i -e "s/slug = \".*\"/slug = \"$slug\"/g" "$file_path"
     fi
+    return 0
   else
     echo "$file_name already exists."
+    return 1
   fi
 
   [ $OPEN_EDITOR -eq 1 ] && atom "$file_path"
