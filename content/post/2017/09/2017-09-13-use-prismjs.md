@@ -2,11 +2,10 @@
 title = "Prismでサクッとシンタックスハイライトの導入"
 slug = "use-prismjs"
 description = ""
-date = "2017-09-13T19:36:12+09:00"
+date = "2017-09-13T20:08:21+09:00"
 categories = ['Hugo']
 tags = ['Prism', 'SyntaxHighlight']
 thumbnail = ""
-draft = true
 author = "nabeen"
 +++
 
