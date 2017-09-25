@@ -17,6 +17,10 @@ menu = "main"
 
 2016年6月に地元近くの福岡に戻ってきて、エンジニアとして生きています。なんとか生きています。まだ、死んでません。
 
+- [Twitter](https://twitter.com/_nabeen)
+- [GitHub](https://github.com/nabeen)
+- [GitLab](https://gitlab.com/nabeen)
+
 ### 職務経歴
 僕の会社員人生はだいたいこんな感じ。
 
