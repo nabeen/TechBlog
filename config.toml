@@ -29,5 +29,5 @@ googleAnalytics = "UA-48961707-14" # Enable Google Analytics by entering your tr
 [Params.widgets]
     search = true # Enable "Search" widget
     recent_articles = true # Enable "Recent arcticles" widget
-    categories = true # Enable "Categories" widget
+    categories = false # Enable "Categories" widget
     tags = true # Enable "Tags" widget
