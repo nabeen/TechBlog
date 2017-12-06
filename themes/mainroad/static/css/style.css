@@ -331,7 +331,7 @@ a:hover {
 }
 
 .entry-content ul, .entry-content ol {
-	margin: 0 0 20px 40px;
+	margin: 0 0 20px 0;
 }
 
 .entry-content ul ul, .entry-content ol ol {
@@ -573,6 +573,39 @@ select {
 .entry-content .mr-video-container {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
+}
+
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4,
+.entry-content h5, .entry-content h6 {
+	margin-top: 3.0rem;
+}
+
+.entry-content p {
+	font-size: 120%;
+}
+
+.entry-content h2 {
+	padding: 0.5em;/*文字周りの余白*/
+	color: #494949;/*文字色*/
+	background: #f4f4f4;/*背景色*/
+	border-left: solid 5px rgb(230, 73, 70);/*左線（実線 太さ 色）*/
+}
+
+.entry-content h3 {
+	padding: 0.5em 0;/*上下の余白*/
+	border-bottom: solid 3px rgb(230, 73, 70);/*下線*/
+}
+
+.entry-content h4 {
+
+}
+
+.entry-content h5 {
+
+}
+
+.entry-content h6 {
+
 }
 
 .entry-content blockquote p:last-child {
@@ -1461,7 +1494,7 @@ textarea {
 	}
 
 	.entry-content ul, .entry-content ol {
-		margin: 0 0 20px 20px;
+		margin: 0 0 20px 0;
 	}
 
 	.entry-content ul ul, .entry-content ol ol {
@@ -1499,4 +1532,13 @@ textarea {
 	.mr-posts-focus-caption-small {
 		display: none;
 	}
+}
+
+pre[class*="language-"] {
+    margin: 0.5em 0 2.0em 0 !important;
+}
+
+.entry-content p code {
+    font-size: 90% !important;
+    background-color: rgb(255, 220, 220) !important;
 }
