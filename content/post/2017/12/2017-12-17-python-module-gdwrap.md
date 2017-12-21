@@ -2,11 +2,10 @@
 title = "Google Drive REST APIのラッパー、gdwrapをリリースしました #app_a_week"
 slug = "python-module-gdwrap"
 description = ""
-date = "2017-12-17T12:00:00+09:00"
+date = "2017-12-22T02:39:13+09:00"
 categories = ['Python']
 tags = ['Python', 'PyPI']
 thumbnail = ""
-draft = true
 author = "nabeen"
 +++
 
