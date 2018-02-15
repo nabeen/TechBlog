@@ -3,7 +3,7 @@ build:
   steps:
     - arjen/hugo-build@1.14.1:
       flags: --buildDrafts=false
-      theme: mainroad
+      theme: even
 deploy:
   steps:
     - install-packages:
