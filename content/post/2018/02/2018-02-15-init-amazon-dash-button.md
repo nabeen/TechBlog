@@ -6,7 +6,6 @@ date = "2018-02-15T18:18:09+09:00"
 categories = ['Node.js']
 tags = ['Node.js', 'Amazon Dash Button']
 thumbnail = ""
-draft = true
 author = "nabeen"
 +++
 
