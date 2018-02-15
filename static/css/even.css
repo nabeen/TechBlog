@@ -1,0 +1,80 @@
+/* リストスタイル */
+article ul li {
+	padding:0px;
+	margin:0px;
+}
+
+article ul li {
+	list-style-type:none !important;
+	list-style-image:none !important;
+	margin: 5px 0px 5px 0px !important;
+}
+
+article ul li {
+	position:relative;
+	padding-left:20px;
+}
+
+article ul li:after, article ul li:before{
+	content:'';
+	display:block;
+	position:absolute;
+	top:4px;
+	left:8px;
+	height:11px;
+	width:4px;
+	background:#aaa;
+	border-radius:10px;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+}
+article ul li:before{
+	top:8px;
+	left:3px;
+	height:8px;
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+}
+
+article ol {
+  counter-reset: my-counter;
+  list-style: none;
+  padding: 0;
+}
+
+article ol li {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+article ol li:before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  background-color: #e64946;
+  color: #ffffff;
+  display: block;
+  float: left;
+  line-height: 22px;
+  margin-left: -30px;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+.post-ads span{
+  padding: 5px
+}
+
+.post-ads {
+  padding: 10px;
+  background-color: #eee;
+  text-align: center;
+}
+
+.ninja_onebutton {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

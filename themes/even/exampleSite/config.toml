@@ -1,37 +1,35 @@
-baseurl = "https://nabeen.github.io/"
-title = "⌘Cmd+C, ⌘Cmd+V"
-languageCode = "ja"
+baseURL = "http://localhost:1313/"
+languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
+title = "Even - A super concise theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "even"
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
-paginate = 7                                              # 首页每页显示的文章数
-disqusShortname = "cmd-c-cmd-v"      # disqus_shortname
-googleAnalytics = "UA-48961707-14"      # UA-XXXXXXXX-X
+paginate = 3                                              # 首页每页显示的文章数
+disqusShortname = ""      # disqus_shortname
+googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
-  name = "nabeen"
-  bio = "修羅の国でせっせと働く社畜系WEBエンジニアです。勉強会で会ったら指差して笑ってください・ω・ Software Engineer, #PHP, #Ruby, #RoR, #Swift, #Unity"
-  avatar = "https://github.com/nabeen.png"
+  name = "olOwOlo"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
 
-# [[menu.main]]             # config your menu              # 配置目录
-#   name = "Home"
-#   weight = 10
-#   identifier = "home"
-#   url = "/"
-# [[menu.main]]
-#   name = "Archives"
-#   weight = 20
-#   identifier = "archives"
-#   url = "/post/"
+[[menu.main]]             # config your menu              # 配置目录
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Archives"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
 [[menu.main]]
   name = "Tags"
   weight = 30
@@ -50,29 +48,28 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   since = "2017"            # Site creation time          # 站点建立时间
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "⌘Cmd+C, ⌘Cmd+V"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["nabeen", "developper", "hacker"]
-  subtitle = "今日も僕は修羅の国で元気に消耗しています:)" # Subtitle of your site
-  description = "nabeen's personal blog about tech." # Description of your site
+  logoTitle = "Even"        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["Hugo", "theme","even"]
+  description = "Hugo theme even example site."
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archivePaginate = 7
+  archivePaginate = 3
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
 
   # show word count and read time ?                       # 是否显示字数统计与阅读时间
-  moreMeta = true
+  moreMeta = false
 
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
-  autoCollapseToc = true   # Auto expand and collapse toc                              # 目录自动展开/折叠
+  autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
   fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
-  mathjax = true           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
-  mathjaxEnableSingleDollar = true                                                     # 是否使用 $...$ 即可進行inline latex渲染
+  mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
+  mathjaxEnableSingleDollar = false                                                     # 是否使用 $...$ 即可進行inline latex渲染
 
-  postMetaInFooter = false   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
+  postMetaInFooter = true   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
   linkToMarkDown = false    # Only effective when hugo will output .md files.           # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
   contentCopyright = ''     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
@@ -86,7 +83,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  customCSS = ['even.css']
+  customCSS = []
   customJS = []
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
@@ -108,19 +105,19 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    # a-email = "mailto:your@email.com"
-    # b-stack-overflow = "http://localhost:1313"
-    c-twitter = "https://twitter.com/_nabeen"
-    d-facebook = "https://www.facebook.com/kenichirow"
-    e-linkedin = "https://www.linkedin.com/in/kenichiro-watanabe-a465299a/"
-    # f-google = "http://localhost:1313"
-    g-github = "https://github.com/nabeen"
-    # h-weibo = "http://localhost:1313"
-    # i-zhihu = "http://localhost:1313"
-    # j-douban = "http://localhost:1313"
-    # k-pocket = "http://localhost:1313"
-    # l-tumblr = "http://localhost:1313"
-    m-instagram = "https://www.instagram.com/nabeen919"
+    a-email = "mailto:your@email.com"
+    b-stack-overflow = "http://localhost:1313"
+    c-twitter = "http://localhost:1313"
+    d-facebook = "http://localhost:1313"
+    e-linkedin = "http://localhost:1313"
+    f-google = "http://localhost:1313"
+    g-github = "http://localhost:1313"
+    h-weibo = "http://localhost:1313"
+    i-zhihu = "http://localhost:1313"
+    j-douban = "http://localhost:1313"
+    k-pocket = "http://localhost:1313"
+    l-tumblr = "http://localhost:1313"
+    m-instagram = "http://localhost:1313"
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.
