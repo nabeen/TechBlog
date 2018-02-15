@@ -78,3 +78,43 @@ article ol li:before {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+/***** Author Box *****/
+.mr-author-box {
+	line-height: 1.5;
+	padding: 25px 0;
+	margin-bottom: 25px;
+	/* border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb; */
+}
+
+.mr-author-box .screen-reader-text {
+	position: absolute;
+	top: -9999rem;
+	left: -9999rem;
+}
+
+.mr-author-box-avatar {
+	float: left;
+	padding: 3px;
+	margin-right: 25px;
+	border: 1px solid #ebebeb;
+}
+
+.mr-author-box-header {
+	margin-bottom: 10px;
+}
+
+.mr-author-box-name {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.author .mr-author-box {
+	margin-top: 25px;
+}
+
+.mr-author-box-avatar, .mr-author-box-avatar img {
+	border-radius: 50%
+}
