@@ -1,16 +1,21 @@
-baseurl = "https://nabeen.github.io/"
-title = "⌘Cmd+C, ⌘Cmd+V"
-languageCode = "ja"
-defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
+baseURL = "https://tech.nabeen.be/"
+title = "⌘+C, ⌘+V"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "even"
+theme = "jane"
+
+# language support # en / zh-cn / other... translations present in i18n/
+defaultContentLanguage = "en"           # Default language to use
+[languages.en]
+  languageCode = "en"
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 7                                              # 首页每页显示的文章数
+rssLimit = 10             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = "cmd-c-cmd-v"      # disqus_shortname
 googleAnalytics = "UA-48961707-14"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+# uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
 [author]                  # essential                     # 必需
   name = "nabeen"
@@ -22,16 +27,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   priority = 0.5
   filename = "sitemap.xml"
 
-# [[menu.main]]             # config your menu              # 配置目录
-#   name = "Home"
-#   weight = 10
-#   identifier = "home"
-#   url = "/"
-# [[menu.main]]
-#   name = "Archives"
-#   weight = 20
-#   identifier = "archives"
-#   url = "/post/"
 [[menu.main]]
   name = "Tags"
   weight = 30
@@ -44,19 +39,23 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   url = "/categories/"
 
 [params]
-  version = "3.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
-
+  # uglyURLs = true          # You must set true after use uglyURLs in site (above). because $.Site.UglyURLs can not import.
   since = "2017"            # Site creation time          # 站点建立时间
+  homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
+  rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "⌘Cmd+C, ⌘Cmd+V"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["nabeen", "developper", "hacker"]
-  subtitle = "今日も僕は修羅の国で元気に消耗しています:)" # Subtitle of your site
-  description = "nabeen's personal blog about tech." # Description of your site
+  logoTitle = ""        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["nabeen", "blog", "tech"]
+  description = "今日も僕は修羅の国で元気に消耗しています:)"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archivePaginate = 7
+  archive-paginate = 7
+
+  # paginate style, default use numbered pagination links
+  # if true, use original "Previous" and "Next" links.
+  paginateOriginalStyle = true
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
@@ -66,19 +65,15 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
-  toc = true                                                                            # 是否开启目录
-  autoCollapseToc = true   # Auto expand and collapse toc                              # 目录自动展开/折叠
-  fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
-  mathjax = true           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
-  mathjaxEnableSingleDollar = true                                                     # 是否使用 $...$ 即可進行inline latex渲染
-
-  postMetaInFooter = false   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
-  linkToMarkDown = false    # Only effective when hugo will output .md files.           # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
-  contentCopyright = ''     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+  toc = false                                                                            # 是否开启目录
+  fancybox = false           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
+  bootcdn = false           # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
+  mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
+  # contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   changyanAppid = ""        # Changyan app id             # 畅言
   changyanAppkey = ""       # Changyan app key
-  livereUID = ""            # LiveRe UID                  # 来必力
+  tencent_analytics = ""    # Tencent Analytics
   baidu_push = false        # baidu push                  # 百度
   baidu_analytics = ""      # Baidu Analytics
   baidu_verification = ""   # Baidu Verification
@@ -86,8 +81,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  customCSS = ['even.css']
-  customJS = []
+  customCSS = ['my-jane.css']            # if ['custom.css'], load '/static/css/custom.css' file
+  customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = false
@@ -95,12 +90,15 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
     fancyboxJs = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
     fancyboxCss = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
+    gitmentJS = '<script src="https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js" crossorigin="anonymous"></script>'
+    gitmentCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">'
 
-  [params.busuanzi]         # count web traffic by busuanzi                             # 是否使用不蒜子统计站点访问量
-    enable = false
-    siteUV = true
-    sitePV = true
-    pagePV = true
+  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+    owner = ""              # Your GitHub ID
+    repo = ""               # The repo to store comments
+    clientId = ""           # Your client ID
+    clientSecret = ""       # Your client secret
+
 
   [params.reward]                                         # 文章打赏
     enable = false
@@ -108,34 +106,30 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    # a-email = "mailto:your@email.com"
-    # b-stack-overflow = "http://localhost:1313"
     c-twitter = "https://twitter.com/_nabeen"
     d-facebook = "https://www.facebook.com/kenichirow"
     e-linkedin = "https://www.linkedin.com/in/kenichiro-watanabe-a465299a/"
-    # f-google = "http://localhost:1313"
+    f-google = "https://plus.google.com/112361117002814091073"
     g-github = "https://github.com/nabeen"
-    # h-weibo = "http://localhost:1313"
-    # i-zhihu = "http://localhost:1313"
-    # j-douban = "http://localhost:1313"
-    # k-pocket = "http://localhost:1313"
-    # l-tumblr = "http://localhost:1313"
-    m-instagram = "https://www.instagram.com/nabeen919"
+    m-instagram = "https://www.instagram.com/nabeen919/"
 
-# 将下面这段配置取消注释可以使 hugo 生成 .md 文件
-# Uncomment these options to make hugo output .md files.
-#[mediaTypes]
-#  [mediaTypes."text/plain"]
-#    suffix = "md"
-#
-#[outputFormats.MarkDown]
-#  mediaType = "text/plain"
-#  isPlainText = true
-#  isHTML = false
-#
-#[outputs]
-#  home = ["HTML", "RSS"]
-#  page = ["HTML", "MarkDown"]
-#  section = ["HTML", "RSS"]
-#  taxonomy = ["HTML", "RSS"]
-#  taxonomyTerm = ["HTML"]
+# jsonfeed support
+# more information: https://github.com/xianmin/hugo-theme-jane/issues/23
+# [outputs]
+#   home = ["html", "jsonfeed"]
+#   page = ["html"]
+# 
+# [outputFormats]
+# [outputFormats.jsonfeed]
+#   mediaType = "application/json"
+#   baseName = "feed"
+#   isPlainText = true
+
+# multilingual support example
+# [langusges]
+# [languages.en]
+#   title = "Jane - A simple theme for Hugo"
+#   weight = 1
+# [languages.zh-cn]
+#   title = "Jane —— 一个简洁的 Hugo 主题"
+#   weight = 2

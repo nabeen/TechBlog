@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "YuGothic M";
+    src: local("Yu Gothic Medium"),
+         local("Yu Gothic");
+    font-weight: 500;
+}
+
+body {
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1.5px;
+    line-height: 1.75;
+}
+
+.post-tags a,
+.menu-item,
+.mobile-menu-list a,
+.mobile-header-logo a,
+.logo-wrapper a,
+.post h1,h2,h3,h4,h5,h6,p,
+footer span {
+    font-family: -apple-system, BlinkMacSystemFont,
+                "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !important;
+}
+
+/***** Author Box *****/
+.mr-author-box {
+	line-height: 1.5;
+	padding: 25px 0;
+	margin-bottom: 25px;
+}
+
+.mr-author-box .screen-reader-text {
+	position: absolute;
+	top: -9999rem;
+	left: -9999rem;
+}
+
+.mr-author-box-avatar {
+	float: left;
+	padding: 3px;
+	margin-right: 25px;
+	border: 1px solid #ebebeb;
+}
+
+.mr-author-box-header {
+	margin-bottom: 10px;
+}
+
+.mr-author-box-name {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.author .mr-author-box {
+	margin-top: 25px;
+}
+
+.mr-author-box-avatar, .mr-author-box-avatar img {
+	border-radius: 50%
+}
