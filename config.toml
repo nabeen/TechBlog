@@ -19,7 +19,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
 [author]                  # essential                     # 必需
   name = "nabeen"
-  bio = "修羅の国でせっせと働く社畜系WEBエンジニアです。勉強会で会ったら指差して笑ってください・ω・ Software Engineer, #PHP, #Ruby, #RoR, #Swift, #Unity"
+  bio = "💪Job: Software Developer / 😍Likes: Blockchain, Cryptocurrency, AirDrop / 😎Target: Remote worker:D / 👍Skills: Blogger, Investor, Columnist, Engineering"
   avatar = "https://github.com/nabeen.png"
 
 [sitemap]                 # essential                     # 必需
