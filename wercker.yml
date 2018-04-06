@@ -1,12 +1,12 @@
 box: node
 build:
   steps:
-    - scripts:
+    - script:
       name: install wget
       code: |
         apt-get update
         apt-get -y install wget
-    - scripts:
+    - script:
       name: wget hugo
       code: |
         wget https://github.com/gohugoio/hugo/releases/download/v0.38.1/hugo_0.38.1_Linux-64bit.deb && dpkg -i hugo*.deb
