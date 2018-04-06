@@ -12,7 +12,8 @@ body {
     line-height: 1.75;
 }
 
-.mr-author-box,
+.mr-author-box-header,
+.mr-author-box-bio,
 .post-tags a,
 .menu-item,
 .mobile-menu-list a,
