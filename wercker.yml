@@ -14,7 +14,6 @@ build:
       name: build hugo site
       code: |
         hugo -d public
-
 deploy:
   steps:
     - script:
