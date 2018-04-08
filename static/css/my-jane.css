@@ -62,3 +62,9 @@ footer span {
 .mr-author-box-avatar, .mr-author-box-avatar img {
 	border-radius: 50%
 }
+
+.header .logo-wrapper,
+.header .site-navbar .menu {
+	float: none !important;
+	text-align: center !important;
+}
