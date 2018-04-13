@@ -6,7 +6,6 @@ date = "2018-04-12T22:31:33+09:00"
 categories = []
 tags = []
 thumbnail = ""
-draft = true
 author = "nabeen"
 +++
 
